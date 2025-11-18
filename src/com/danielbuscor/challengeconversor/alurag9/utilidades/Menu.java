@@ -8,10 +8,13 @@ public class Menu {
 
     //El menu principal servira de puerta de entrada al programa
     public void menuPrincipal() {
-        System.out.println("Por favor selecciona una opcion");
+        System.out.println("====== Bienvenido al conversor de monedas ======");
+        System.out.println(" ");
+        System.out.println("== Por favor selecciona una opcion ==");
         System.out.println("1. Realizar conversion");
         System.out.println("2. Ver monedas disponibles");
         System.out.println("3. Salir");
+        System.out.println(" ");
     }
 
     //Este menu contiene las conversiones disponibles
@@ -24,6 +27,7 @@ public class Menu {
         System.out.println("5. USD a BRL");
         System.out.println("6. BRL a USD");
         System.out.println("7. Salir");
+        System.out.println(" ");
     }
 
 
@@ -37,6 +41,8 @@ public class Menu {
         System.out.println("2. Peso Argentino (ARS)");
         System.out.println("3. Peso Boliviano (BOB)");
         System.out.println("4. Real Brasilero (BRL)");
+        System.out.println("5. Salir");
+        System.out.println(" ");
     }
 
     public void separadorVisual() {

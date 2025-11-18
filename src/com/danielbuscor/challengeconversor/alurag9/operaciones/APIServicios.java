@@ -28,6 +28,8 @@ public class APIServicios {
                     .send(solicitud, HttpResponse.BodyHandlers.ofString());
 
             JsonObject jsonResponse = new Gson().fromJson(response.body(), JsonObject.class);
+            //Encontre la siguiente opcion en Gson para que retorne el valor de la conversion como un double en vez
+            //de String
             return jsonResponse.get("conversion_result").getAsDouble();
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
